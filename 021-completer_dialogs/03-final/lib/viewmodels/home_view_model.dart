@@ -4,6 +4,9 @@ import 'package:flutter/foundation.dart';
 
 class HomeViewModel extends ChangeNotifier {
   final DialogService _dialogService = locator<DialogService>();
+
+
+  ///
   Future doThings() async {
     print('dialog shown');
     var dialogResult = await _dialogService.showDialog(

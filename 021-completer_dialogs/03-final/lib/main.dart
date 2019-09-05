@@ -4,6 +4,7 @@ import 'package:dialog_manager/ui/home/home_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
+  ///配置
   setupLocator();
   runApp(MyApp());
 }

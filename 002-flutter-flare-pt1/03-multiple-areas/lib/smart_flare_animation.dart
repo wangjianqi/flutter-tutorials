@@ -36,6 +36,7 @@ class _SmartFlareAnimationState extends State<SmartFlareAnimation> {
       height: AnimationHeight,
       child: GestureDetector(
           onTapUp: (tapInfo) {
+            ///定位点击位置
             var localTouchPosition = (context.findRenderObject() as RenderBox)
                 .globalToLocal(tapInfo.globalPosition);
 

@@ -51,12 +51,14 @@ class HomeView extends StatelessWidget {
                         title: 'Users',
                       ),
                     ),
-                    StatsCounter(
-                      size: screenHeight(context,
-                              dividedBy: 3, decreasedBy: toolbarHeight) -
-                          CounterMargins,
-                      count: 2,
-                      title: 'Apps Created',
+                    Expanded(
+                      child: StatsCounter(
+                        size: screenHeight(context,
+                                dividedBy: 3, decreasedBy: toolbarHeight) -
+                            CounterMargins,
+                        count: 2,
+                        title: 'Apps Created',
+                      ),
                     )
                   ])),
         ]));

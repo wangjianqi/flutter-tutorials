@@ -38,7 +38,7 @@ class Home extends StatelessWidget {
                 true, // plays the animation till the end when we reach threshold
             activeAreas: [
               RelativePanArea(
-                  area: Rect.fromLTWH(0, 0.7, 1.0, 0.3), debugArea: false)
+                  area: Rect.fromLTWH(0, 0.7, 1.0, 0.3), debugArea: true)
             ],
           ),
         ),

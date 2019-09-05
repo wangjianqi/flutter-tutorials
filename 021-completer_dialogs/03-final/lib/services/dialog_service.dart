@@ -19,9 +19,11 @@ class DialogService {
       description: description,
       buttonTitle: buttonTitle,
     ));
+    ///future
     return _dialogCompleter.future;
   }
 
+  ///完成
   void dialogComplete(AlertResponse response) {
     _dialogCompleter.complete(response);
     _dialogCompleter = null;

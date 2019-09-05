@@ -18,6 +18,7 @@ class _DialogManagerState extends State<DialogManager> {
   @override
   void initState() {
     super.initState();
+    ///注册监听
     _dialogService.registerDialogListener(_showDialog);
   }
 
@@ -26,6 +27,7 @@ class _DialogManagerState extends State<DialogManager> {
     return widget.child;
   }
 
+  ///监听
   void _showDialog(AlertRequest request) {
     Alert(
         context: context,

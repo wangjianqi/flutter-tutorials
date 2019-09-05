@@ -33,17 +33,19 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      body: Column(
-        children: <Widget>[
-          // Top section
-          topSection,
+      body: SafeArea(
+        child: Column(
+          children: <Widget>[
+            // Top section
+            topSection,
 
-          // Middle expanded
-          middleSection,
+            // Middle expanded
+            middleSection,
 
-          // Bottom Section
-          BottomToolbar(),
-        ],
+            // Bottom Section
+            BottomToolbar(),
+          ],
+        ),
       ),
     );
   }
